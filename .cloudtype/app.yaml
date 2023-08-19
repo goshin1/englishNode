@@ -1,0 +1,16 @@
+name: english-server
+app: node@18
+resources: {}
+options:
+  env:
+    - name: NODE_ENV
+      value: production
+    - name: TEST_PORT
+      value: "4001"
+  ports: "5000"
+  start: node index.js
+context:
+  git:
+    url: https://github.com/goshin1/english_server.git
+    branch: master
+  preset: node
