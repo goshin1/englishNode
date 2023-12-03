@@ -15,7 +15,7 @@ app.use(express.json());
 const client = new Client({
     user : process.env.POSTGRES_USER,
     host : process.env.POSTGRES_HOST,
-    database : 'postgresql',
+    database : 'postgres',
     password : process.env.POSTGRES_PASSWORD,
     port : process.env.POSTGRES_PORT
 });
